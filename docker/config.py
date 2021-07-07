@@ -32,6 +32,8 @@ SITES = {
     "front": {"domain": f"{ os.getenv('TAIGA_SITES_DOMAIN') }", "scheme": f"{ os.getenv('TAIGA_SITES_SCHEME') }", "name": "front"}
 }
 
+FORCE_SCRIPT_NAME = f"{ os.getenv('TAIGA_SUBPATH', '/') }"
+
 INSTANCE_TYPE = "D"
 
 WEBHOOKS_ENABLED = True
